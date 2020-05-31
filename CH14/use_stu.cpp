@@ -5,24 +5,7 @@ using namespace std;
 void set(Studenti & sa, int n);
 const int pupils = 3;
 const int quizzes = 5;
-template <typename T>
-class HasFriend
-{
-private:
-	T item;
-	static int ct;
-public:
-	HasFriend(const T & i) : item(i) { ct++ };
-	~HasFriend(){}
-	friend void counts();
-	friend void reports(HasFriend<T> &);
-};
 
-template <typename T>
-int HasFriend<T>::ct = 0;
-
-void counts()
-{}
 int main()
 {
 	/*
